@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{border-collapse: collapse;}
+        caption{background-color: rgb(202, 243, 241);}
+        th{
+          background-color: rgba(184, 192, 240, 0.925);
+        }
+        caption,th,td{
+            border:1px solid rgb(12, 12, 12)
+        }
+    </style>
+
+<style>
+        table{
+            border: 2px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+        }
+
+        th,td{
+            border:1px solid aquamarine;
+        }
+
+        .col1{
+            background-color: rgb(224, 243, 252);
+        }
+
+        td{text-align: center;}
+    </style>
+
+    <style>
+        header,nav,main,footer{
+            padding:20px 10px; margin : 10px; width: 50px;
+        }
+        header{
+            border: 3px solid rgb(248, 226, 101);
+        }
+        nav{
+            border: 3px solid pink;
+        }
+        main{
+            border: 3px solid skyblue;
+        }
+        footer{
+            border: 3px solid silver;
+        }
+
+        span{
+            background-color: orange;
+        }
+    </style>
+    </head>
+<body>
+
+
+
+<table>
+        <caption>반 성적</caption>
+        <tr>
+            <th>1반</th>
+            <td>100점</td>
+        </tr>
+        <tr>
+            <th>2반</th>
+            <td>90점</td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <caption>반 성적</caption>
+        <thead>
+            <tr>
+                <th>1반</th>
+                <th>2반</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100점</td>
+                <td>90점</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">요약</td>
+            
+        </tfoot>
+
+    </table>
+
+ <br>
+
+<table>
+    <caption>학급 성적표</caption>
+    <colgroup>
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <col class="col5">
+        <col class="col6">
+    </colgroup>
+    <tr>
+        <th>반</th>
+        <th>이름</th>
+        <th>국어</th>
+        <th>영어</th>
+        <th>수학</th>
+        <th>과학</th>
+    </tr>
+    <tr>
+        <td rowspan="2">1반</td>
+        <td>홍길동</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        
+        <td>김철수</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td colspan="2">평균</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+    </tr>
+</table>
+
+<header>header</header>
+<nav>nav</nav>
+<main>content</main>
+<footer>footer</footer>
+<span>block-inlinetag</span>
+
+
+
+</body>
+</html>
