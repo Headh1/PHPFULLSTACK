@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        li{margin-bottom: 10px;}
-        input{border:none; border-bottom: dashed red; }
+        li {
+            margin-bottom: 10px;
+        }
     </style>
 
 
 </head>
+
 <body>
     <h1>회원가입을 환영합니다</h1>
     <form action="">
@@ -44,11 +47,11 @@
                 </li>
                 <li>
                     <label for="textbox">메모</label>
-                    <textarea name="memo" id="textbox" cols="50" rows="8"></textarea>
+                    <textarea name="memo" id="textbox" cols="50" rows="8" placeholder="남길 말씀이 있다면 여기에"></textarea>
                 </li>
             </ul>
         </fieldset>
-        <fieldset>            
+        <fieldset>
             <legend>이벤트와 새로운 소식</legend>
             <input type="radio" name="radio" id="ok">
             <label for="ok">메일 수신</label>
@@ -57,8 +60,9 @@
             <label for="not">메일 수신 안 함</label>
         </fieldset>
         <br>
-            <input type="submit" value="가입" name="sub" id="sub">
-            <input type="reset" value="취소" name="re" id="re">
+        <input type="submit" value="가입" name="sub" id="sub">
+        <input type="reset" value="취소" name="re" id="re">
     </form>
 </body>
+
 </html>
