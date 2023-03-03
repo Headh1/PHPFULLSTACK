@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{margin:1px ;}
+        textarea{margin-bottom: 3px;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <p>메모</p>
+        <label for="textbox"></label>
+        <textarea name="memo" id="textbox" cols="30" rows="20"></textarea>    
+        <br><br>
+
+        <select name="select" id="select" size="5" multiple>
+            <option value="0">초밥</option>
+            <option value="1" selected>김밥</option>
+            <option value="2">덮밥</option>
+        </select>
+        <br><br>
+        
+        <label for="food">음식</label>
+        <input type="text" id="food" list="datalist">
+        <datalist name="datalist" id="datalist">
+            <option value="1">냉면</option>
+            <option value="2">소면</option>
+            <option value="3">밀면</option>
+        </datalist>
+        <br><br>
+
+        <button type="submit">전송</button>
+        <button type="reset">리셋</button>
+        <button type="button">버튼</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w-btn {position: relative;
+                border: none;
+                display: block;
+                padding: 10px 15px;
+                border-radius: 50px;
+                font-family: "paybooc-Light", sans-serif;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+                text-decoration: no;
+                font-weight: 700;
+                transition: 0.25s;}
+        .w-btn-gra1{background: linear-gradient(-45deg, #bde8f0 0%, #bbc6f8 100%);
+                    color: white;}
+        button {
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend> 고객정보</legend>
+            <label for=id>ID</label>
+            <input type="text" name="id" id="id" 
+                    required autofocus placeholder="8자제한">
+
+            <label for=pw>PW</label>
+            <input type="password" name="pw" id="pw">
+
+            <label for=readonly>참조</label>
+            <input type="text" readonly value="Hello World">
+
+            <ul>
+                <li>
+                    <label for="grape">포도</label>
+                    <input type="checkbox" name="gra" id="grape">
+                </li>
+                <li>
+                    <label for="water">수박</label>
+                    <input checked value="water" type="checkbox" name="water" id="water">
+                </li>
+                <li>
+                    <label for="melon">멜론</label>
+                    <input type="checkbox" name="mel" id="melon">
+                </li>
+            </ul>
+        <button class="w-btn w-btn-gra1" type="submit">확인</button>
+        </fieldset>
+    </form>
+</body>
+</html>
