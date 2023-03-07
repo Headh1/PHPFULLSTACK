@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .art{
+            background-color: rgb(168, 231, 233);
+            
+        }
+        .art1{
+            display: none;
+            background-color: rgb(168, 231, 233);
+
+        }
+        .art2{
+            display: block;
+            background-color: rgb(168, 231, 233);
+
+        }
+        .art3{
+            display: inline;
+            background-color: rgb(168, 231, 233);
+
+        }
+        .art4>div,.art4>span{
+            display: inline-block;
+            width: 100px;
+        }
+        span{
+            border:2px solid rgb(2, 65, 90);
+        }
+        div{
+            border:2px solid rgb(11, 2, 49);
+        }
+        .wh{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <article class="art">
+        <h1>display</h1>
+        <div>div tag1</div>
+        <div>div tag2</div>
+    </article>
+<br>
+    <article class="art1">
+        <h1>display none</h1>
+        <div>div tag1</div>
+        <div>div tag2</div>
+    </article>
+<br>
+    <span class="art2">span</span>
+<br>
+    <article class="art3">
+        article
+    </article>
+<br>
+<br>
+    <article class="art4">
+        <h1>display inline-block</h1>
+        <div>div1</div>
+        <div>div2</div>
+        <span>span1</span>
+        <span>span1</span>
+    </article>
+<br>
+    <div class="wh">테스트 div</div>
+    <span class="wh">테스트 span</span>
+</body>
+</html>
