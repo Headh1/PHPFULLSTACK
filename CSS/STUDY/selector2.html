@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[target]{
+            color:salmon;
+        }
+        [class=one]{
+            border:2px solid slateblue;
+        }
+        [class~=two]{
+            background-color: bisque;
+        }
+        [class |= two]{
+            color:cadetblue;
+        }
+        [class ^= a]{
+            border:2px solid rgb(118, 235, 114);}
+        [class *= e]{
+            background-color: rgb(241, 215, 238);
+        }
+        [class $=y]{
+            border:2px solid rgb(214, 63, 52);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com/" target="_blank">네이버</a>
+    <br>
+    <br>
+    <h2 class="one">test1</h2>
+    <h2 class="two">test2</h2>
+    <h2 class="one two-by">test3</h2>
+    <h2 class="two-by">test4</h2>
+    <h2 class="att">test5</h2>
+
+</body>
+</html>

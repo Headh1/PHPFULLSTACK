@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color:rgb(253, 253, 253);
+        }
+        a:visited{
+            color:rgb(7, 7, 8);
+        }
+        li:hover{
+            background-color: #E84441;
+        }
+        li:active{
+            background-color:rgb(192, 144, 144);
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            border:1px solid #f5aba3;
+            background-color: rgb(247, 87, 70);
+            width: 50px;
+            height: 20px;
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+            box-shadow: 5px 5px 5px rgb(204, 202, 202);
+            font-weight: 600;
+            float: left;
+        }
+
+        input:focus{
+            outline: none;
+            border:3px solid hotpink;
+        }
+        #tar:target{
+            background-color: rgb(185, 245, 245);
+        }
+        /* div :nth-child(1){
+            background-color: #f5aba3;
+        }
+        div h2:nth-of-type(2){
+            background-color: #E84441;
+        }
+        div :not(h2){
+            background-color: antiquewhite;
+        } */
+        .con2 .a::first-letter{
+            color:#E84441;
+        }
+        .con2 .b::first-line{
+            color: #f5aba3;
+        }
+        .a>span::before{
+            content: 'ha';
+            color: #E84441;
+            border: 1px solid black;
+        }
+        .b>span::after{
+            content: 'ha';
+            color: #E84441;
+            border: 1px solid black;
+        }
+        .con2 p::selection{
+            background-color:#d0c9fa;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>구조 요소</legend>
+        <div class="con2">
+            <h2>name</h2>
+            <p class="a">잠은 눈이 감기고 대부분의 <span>의식 활동</span>이 정지되는 상태. 거의 모든 동물은 잠을 자며, 이때 아무것도 하지 못하는 무방비한 상태가 된다.</p>
+            <p class="b">맥박과 호흡 등 <span>생명 유지</span>에 필요한 최소한의 활동을 제외한 모든 신체활동이 휴식에 들어간 상태를 '잠'이라 한다.
+                잠은 '자다'에서 파생된 동족목적어이다.</p>
+        </div>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>구조 가상 클래스</legend>
+        <div class="con">
+            <h2>name</h2>
+            <p>p1</p>
+            <p>p2</p>
+            <h2>name2</h2>
+            <p>p3</p>
+        </div>
+    </fieldset>
+    <br><br><br>
+    <a href="https://www.naver.com/">네이버</a>
+
+    <nav>
+        <ul>
+            <li><a href="#tar">하나</a></li>
+            <li><a href="1">둘</a></li>
+            <li><a href="2">셋</a></li>
+            <li><a href="3">넷</a></li>
+            <li><a href="4">다섯</a></li>
+        </ul>
+    </nav>
+    
+    <br><br><br><br>
+    
+    <span id="tar">target text</span>
+    <br><br>
+    <label for="one">로그인</label>
+    <input type="text" id="one">
+
+</body>
+</html>

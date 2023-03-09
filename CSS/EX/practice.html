@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            background-image: url(../IMG/배경.jpg);
+            width: 600px;
+            height: 500px;
+            margin:30px auto;
+        }
+
+        legend {
+            color: rgb(252, 9, 102);
+            font-size: 40px;
+        }
+
+        li {
+            padding: 10px;
+            list-style: none;
+        }
+
+        input {
+            background-color: transparent;
+        }
+
+        li:nth-child(1)::before,
+        li:nth-child(2)::before,
+        li:nth-child(3)::before {
+            content: "*";
+            color: #ce071b;
+        }
+
+        /* .aa::before{
+            content: "*";
+            color: red;
+        }
+        .bb::before{
+            content: "*";
+            color: red;
+        }
+        .cc::before{
+            content: "*";
+            color: red;
+        } */
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 3px solid #f17481;
+        }
+
+        [type=radio]:focus+label {
+            color: #eb3f50;
+        }
+
+        textarea {
+            vertical-align: top;
+            background-color: transparent;
+            border: 2px solid #331804;
+            font-weight: 600;
+
+        }
+
+        textarea::placeholder {
+            color: #331804;
+        }
+
+        /* [type=radio]:focus+label{
+            color:red;
+        } */
+        button {
+            position: relative;
+            display: block;
+            float: left;
+            width: 120px;
+            padding: 0;
+            margin: 35px 20px 10px 0;
+            font-weight: 600;
+            text-align: center;
+            line-height: 50px;
+            color: #FFF;
+            border-radius: 5px;
+            transition: all 0.2s;
+            background-color: #40230D;
+            box-shadow: 5px 5px 0px 0px #a6b498;
+            
+        }
+
+        button:hover::after {
+            content: "내용을 다시 한 번 확인해 주세요.";
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            width: 400px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            position: absolute;
+            left: 120px;
+        }
+
+        .btnPush:hover {
+            margin-top: 40px;
+            margin-bottom: 5px;
+            box-shadow: 0px 0px 0px 0px #007144;
+        }
+
+        [class=aa]>label,
+        [class=bb]>label,
+        .cc,
+        [class=dd]>label {
+            color: #40230D;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>I want you!</legend>
+            <ul>
+                <li class="aa">
+                    <label for="na">이름</label>
+                    <input type="text" name="na" id="na" autofocus required>
+                </li>
+                <li class="bb">
+                    <label for="age">나이</label>
+                    <input type="number" name="age" id="age" min="20" autofocus required>
+                </li>
+                <li class="cc">
+                    성별
+                    <input type="radio" name="radio" id="man" autofocus>
+                    <label for="man">남자</label>
+                    <input type="radio" name="radio" id="wo">
+                    <label for="wo">여자</label>
+                <li class="dd">
+                    <label for="textbox">요청사항</label>
+                    <textarea name="memo" id="textbox" cols="40" rows="10" placeholder="요청 사항 입력" autofocus></textarea>
+                </li>
+                <li>
+                    <button type="submit" class="btnPush btnBlueGreen">보내기</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+
+</html>
