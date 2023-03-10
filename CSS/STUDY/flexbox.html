@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            background-color: rgb(196, 232, 247);
+            margin: 10px;
+            width: 60vw;
+            height: 60vh;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap:wrap;
+            /* flex-flow: row wrap; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            align-content: space-around;
+        }
+        .f1{
+            border: 1px solid #310505;
+            width: 15vw;
+            height: 15vh;
+            background-color: #a4eef3;
+        }
+        /* .f2{
+
+            border: 1px solid #310505;
+            width: 5vw;
+            height: 8vh;
+            background-color: #850808;
+            align-self: center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="f1">1</div>
+        <div class="f1">2</div>
+        <div class="f1">3</div>
+        <div class="f1">4</div>
+        <div class="f1 f2">5</div>
+    </div>
+</body>
+</html>
