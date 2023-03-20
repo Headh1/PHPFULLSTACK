@@ -1,5 +1,8 @@
-SHOW INDEX FROM employees;
+-- SHOW INDEX FROM employees;
 
--- CREATE INDEX idx_emp_ln ON employees(last_name);
+CREATE INDEX idx_emp_ln ON employees(last_name);
 
-DROP INDEX idx_emp_ln ON employees;
+-- DROP INDEX idx_emp_ln ON employees;
+-- 
+SELECT * FROM employees
+WHERE last_name LIKE('s%');
