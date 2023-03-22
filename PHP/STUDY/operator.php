@@ -39,5 +39,25 @@
 
 // echo "\n\n",$tng_n;
 
+// $t1= 0;
+// $t2= $t1+1;
+// $t3=3;
+// $t3=$t1+$t2;
+
+// echo $t1 , $t2 ,$t3;
+
+// var_dump(1>2);
+// var_dump(1<2);
+// var_dump(1>=2);
+// var_dump(1<=2);
+// var_dump(3=='3');
+// var_dump(1===1);
+// var_dump(1!=1);
+
+var_dump(1==1 && 2==2);
+var_dump(1==1 && 2==3);
+var_dump(1==1 || 2==3);
+var_dump(!(1==1));
+
 
 ?>
