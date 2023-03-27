@@ -41,5 +41,36 @@
 // unset($week[2]);
 // print_r($week);
 
-echo"d";
+// $ar_dif1 = array("a","b","o");
+// $ar_dif2 = array("a","b","ab");
+
+// $ar_dif = array_diff($ar_dif1,$ar_dif2);
+// print_r($ar_dif);
+
+// $ar_as= array("b","a","c","d");
+// asort($ar_as);
+// print_r($ar_as);
+
+// $ar_ar= array("b","a","c","d");
+// arsort($ar_ar);
+// print_r($ar_ar);
+
+// $ar_ks= array("key1"=>"val1", "key3"=>"val3","key4"=>"val4", "key2"=>"val2");
+// ksort($ar_ks);
+// print_r($ar_ks);
+
+// $ar_kr= array("가"=>"val1","나"=>"val3","라"=>"val4", "다"=>"val2");
+// krsort($ar_kr);
+// print_r($ar_kr);
+// echo count($ar_kr);
+
+// $arr1 = array("a"=>"apple","b"=>"banana","g"=>"grape", "w"=>"watermelon");
+// foreach($arr1 as $key =>$val){
+//     echo $key." : ".$val."\n";
+// }
+
+$ar= array("바다","산","강","숲");
+foreach($ar as $val){
+    echo $val."\n";
+}
 ?>
