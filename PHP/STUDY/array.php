@@ -37,8 +37,7 @@
 // echo $ar_te[1][0];
 // $ar_te_3 =array(array(9,10,11));
 
-$week= array("sun","mon","del","tue","wed");
-unset($week[2]);
-print_r($week);
-
+// $week= array("sun","mon","del","tue","wed");
+// unset($week[2]);
+// print_r($week);
 ?>
