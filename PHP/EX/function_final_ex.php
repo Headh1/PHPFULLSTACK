@@ -28,20 +28,19 @@
 // }
 // echo star(1,2);
 
-function star($s){
-    for($a=0; $a<$s; $a++){
-        echo "*";
-    }
-    echo"\n";
-}
+// function star($s){
+//     for($a=0; $a<$s; $a++){
+//         echo "*";
+//     }
+//     echo"\n";
+// }
 
-function star2($s){
-    for($a=0; $a<$s; $a++){
-        star($s);
-    }
-}
 
-// echo star(1);
+// function star2($s){
+//     for($a=0; $a<$s; $a++){
+//         star($s);
+//     }
+// }
 
 // function star3($s){
 //     for($a=1; $a<$s; $a++){
@@ -49,5 +48,47 @@ function star2($s){
 //     }
 // }
 
-star2(6);
+// $s=rand(4,10);
+// star3($s);
+
+// function st($s){
+//     for($a=$s-1; $a>=0; $a--){
+//         echo"*";
+//     }
+//     echo"\n";
+// }
+
+// function bl($s){
+//     for($a=0; $a<$s; $a++){
+//         echo " ";
+//     }
+// }
+// function star4($s){
+//     for($a=1; $a<=$s; $a++){
+//         bl($s-$a);
+//         st($s);
+//     }
+// }
+
+function st($s){
+    for($a = $s; $a >= 1; $a--){
+        echo "*";
+    }
+}
+
+function bl($s){
+    for($a = 1; $a <= $s; $a++){
+        echo " ";
+    }
+}
+
+function star4($s){
+    for($a = 1; $a <= $s; $a++){
+        bl($s-$a);
+        st($a);
+        echo "\n";
+    }
+}
+
+star4(5);
 ?>
