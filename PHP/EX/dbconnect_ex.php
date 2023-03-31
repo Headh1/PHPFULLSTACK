@@ -26,15 +26,15 @@ $r = mysqli_query($d,"SELECT emp_no,concat(first_name,' ',last_name) as fullname
 //         echo "내용이 없습니다.";
 //     }
 
-$row = mysqli_fetch_row($r);
-if($row){
-    do {
-        $re = implode($row);
-        echo $re."\n";
-    } while ($row = mysqli_fetch_assoc($r));
-} else {
-    echo "내용이 없습니다.";
-}
+// $row = mysqli_fetch_row($r);
+// if($row){
+//     do {
+//         $re = implode($row);
+//         echo $re."\n";
+//     } while ($row = mysqli_fetch_assoc($r));
+// } else {
+//     echo "내용이 없습니다.";
+// }
 
 // if(mysqli_num_rows($r) > 0){
 //     while($a=mysqli_fetch_assoc($r)){
