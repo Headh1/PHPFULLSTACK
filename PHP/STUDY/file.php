@@ -1,5 +1,5 @@
 <?php
-$s = fopen("./file/food.txt","r");
+// $s = fopen("./file/food.txt","r");
 
 // print fgets($s);
 // print fgets($s);
@@ -25,8 +25,9 @@ $s = fopen("./file/food.txt","r");
 //     print $line;
 // }
 // $w = fopen("./file/food.txt","w");
-$a = fopen("./file/food.txt","a");
+// $a = fopen("./file/food.txt","a");
 
-fputs($a,"\n사과");
-fclose($s);
+// fputs($a,"\n사과");
+
+// fclose($s);
 ?>
