@@ -104,4 +104,14 @@
 // else{
 //     echo $a;
 // }
+
+function sum($p){
+    $re=0;
+    for($a=1; $a<=$p; $a++){
+        $re+=$a;
+        }
+        echo $re;
+}
+
+sum(100);
     ?>
