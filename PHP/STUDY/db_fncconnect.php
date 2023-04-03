@@ -19,17 +19,17 @@ function my_db( &$p_c){
 $p_c = new PDO( $dns,$user,$password,$op);
 }
 
-$obj = null;
-my_db($obj);
+// $obj = null;
+// my_db($obj);
 
-$s=" SELECT * from employees limit :l_s ";
-$a=array(":l_s"=>5);
+// $s=" SELECT * from employees limit :l_s ";
+// $a=array(":l_s"=>5);
 
-$st= $obj->prepare($s);
-$st->execute($a);
-$re = $st->fetchAll();
+// $st= $obj->prepare($s);
+// $st->execute($a);
+// $re = $st->fetchAll();
 
-var_dump($re);
+// var_dump($re);
 
-$obj =null;
+// $obj =null;
 ?>
