@@ -4,14 +4,17 @@ include_once("../STUDY/db_fncconnect.php");
 $obj=null;
 my_db($obj);
 // 1. 전체 월급의 평균
-// $s1=" SELECT avg(salary) from salaries where to_date>=now()";
+$s1=" SELECT avg(salary) from salaries where to_date>=now()";
 // $st=$obj->prepare($s1);
 // $st-> execute();
 // $re = $st->fetchAll();
-
 // var_dump($re);
 
+// $st=$obj->query($s1);
+// $re=$st->fetchAll();
+// var_dump($re);
 // $obj=null;
+
 // 2. 새로운 사원 정보를 employees테이블에 등록
 // $s2=" INSERT INTO employees(emp_no,birth_date,first_name,last_name,gender,hire_date) 
 // values(:emp_no,:birth_date,:first_name,:last_name,:gender,:hire_date)";
@@ -38,4 +41,5 @@ my_db($obj);
 // $re=$st->execute($a);
 // $obj->commit();
 // var_dump($re);
+
 ?>

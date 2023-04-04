@@ -1,5 +1,5 @@
 <?php
-include_once("./fncdbconn.php");
+include_once("./db_fncconnect.php");
 
 $obj = null;
 my_db($obj);
