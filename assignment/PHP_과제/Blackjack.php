@@ -75,7 +75,8 @@
 // var_dump($r1);
 
 // -------- 여기서 부터 다시 시작
-function start($d){
+
+
     // $card=array();
 // $user=array();
 // $dealer=array();
@@ -94,7 +95,6 @@ function start($d){
 // shuffle($card);
 // $user = array_shift($card);
 // $dealer = array_shift($card);
-}
 
 // 3. kqj10 값을 10으로 주기 , a 값을 1,11줘 값더하기
 // function change($ch){
