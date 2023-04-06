@@ -101,40 +101,50 @@
 // fnc_reference($str);
 // echo $str;
 
+function fnc(&$p){
+    echo "2번 : $p \n";
+    $p ="bbb";
+    echo "3번 : $p \n";
+}
+$s="aaa";
+echo "1번 : $s \n";
+fnc($s);
+echo "4번 : $s \n";
+
 // function s($a){
 //     for($i=0; $i<$a; $i++){
 //         echo"*";
 //     }
+//     echo "\n";
 // }
 
 // function star($a){
+//     for($i=1; $i<$a; $i++){
+//         s($i);
+// }
+// }
+
+// function s($a,$b){
 //     for($i=0; $i<$a; $i++){
-//         s(6);
+//         echo $b;
+//     }
+//     echo "\n";
 // }
-// echo "\n";
+// function star($a){
+//     for($i=1; $i<$a; $i++){
+//         s($i,"@");
 // }
+// }
+// s(6,"★")
+// star(6);
+// $b="$";
+// s(6,$b);
 
-// echo s(6);
-// echo star(6);
-
-function star($s){
-    for($a=0; $a<$s; $a++){
-        echo "*";
-    }
-    echo"\n";
-}
-
-
-function star2($s){
-    for($a=0; $a<$s; $a++){
-        star($s);
-    }
-}
-
-function star3($s){
-    for($a=1; $a<$s; $a++){
-        star($a);
-    }
-}
-star3(6);
+// function s1($a,$b="$"){
+//     for($i=0; $i<$a; $i++){
+//         echo $b;
+//     }
+//     echo "\n";
+// }
+// s1(6);
 ?>
