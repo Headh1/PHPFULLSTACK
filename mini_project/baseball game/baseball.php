@@ -32,6 +32,7 @@ for($a=0; $a<3; $a++){
 }
 
 $inning=1;
+
 while($inning>10){
 
 $player=array();
@@ -40,7 +41,11 @@ echo "$inning 회";
 echo "숫자를 입력하세요 : ";
 fscanf(STDIN, "%d %d %d", $player[0],$player[1],$player[2]); 
 
-if($player[$i]=)
+for($i=0; $i<3; $i++){
+    if($player[$i]==$answer[$i]){
+        echo "스트라이크!";
+    }
+}
 
 $inning++;
 }
