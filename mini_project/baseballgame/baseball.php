@@ -28,7 +28,6 @@ shuffle($number);
 for($a=0; $a<3; $a++){
     $base = array_shift($number);
     array_push($answer,$base);
-    var_dump($answer);
 }
 
 $inning=1;
@@ -41,14 +40,29 @@ echo "$inning 회";
 echo "숫자를 입력하세요 : ";
 fscanf(STDIN, "%d %d %d", $player[0],$player[1],$player[2]); 
 
+$sk=0;
+$ball=0;
 for($i=0; $i<3; $i++){
     if($player[$i]==$answer[$i]){
-        echo "스트라이크!";
+        $sk++;
     }
-}
+    else if (in_array($input[$i], $answer)) {
+        $ball++;
+    }
 
 $inning++;
+$tryCount++;
+if ($strike === 4) {
+    echo "축하합니다! 정답을 맞추셨습니다.\n";
+    break;
+  } else {
+    echo "{$strike} 스트라이크, {$ball} 볼입니다.\n";
+    $tryCount++;
+  }
 }
+echo "게임 종료! {$tryCount}번 시도하셨습니다.\n";
+}
+
 
 // while(true) {
 //     echo "시작";
