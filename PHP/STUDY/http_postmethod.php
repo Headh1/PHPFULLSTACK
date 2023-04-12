@@ -1,3 +1,7 @@
+<?php
+
+
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,9 +11,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="get">
-        <input type="text" name ="test1" value="testvalue1">
-        <button type="submit">sumbit </button>
+    <form method="post" action="http_post.php">
+        <input type="text" name="p_test1">
+        <input type="text" name="p_test2">
+        <input type="hidden" name="p_hidden1" value="aaa">
+        <br>
+        <button type= "submit">submit</button>
     </form>
 </body>
 </html>
