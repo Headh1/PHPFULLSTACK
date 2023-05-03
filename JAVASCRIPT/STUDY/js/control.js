@@ -62,13 +62,13 @@
 //     console.log(i);
 // }
 
-for( let i=1; i<6; i+=2){
-    for(let j=5; i<j; j-=2){
-        var star = " ";
-    }
-    for(let j=0; i>j; j++){
-        star += "*";
-    }
-    star += "\n";
-}
-console.log(star);
+// for( let i=1; i<6; i+=2){
+//     for(let j=5; i<j; j-=2){
+//         var star = " ";
+//     }
+//     for(let z=0; i>z; z++){
+//         star += "*";
+//     }
+//     star += "\n";
+// }
+// console.log(star);
