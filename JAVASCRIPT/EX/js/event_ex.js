@@ -20,7 +20,7 @@ function color_rand(){
 // function color_rand(){
 //     let co = ["c.png","h.png","i.png","j.png","m.png","u.png"];
 //     var coo = Math.floor(Math.random()*co.length);
-//     d.style.backgroundImage = "url('./img/"+co[coo]+"')";
+//     d.style.backgroundImage = "url('../img/"+co[coo]+"')";
 // };
 
 b.addEventListener('mousedown',function(){ 
@@ -40,7 +40,7 @@ d.addEventListener('click', function () {
     } else {
         alert('안녕!');
         d.style.backgroundColor = "black";
-        // d.style.backgroundImage = "url('./img/j.png')";
+        // d.style.backgroundImage = "url('../img/j.png')";
         location_rand();
         cc = 0;
     }
