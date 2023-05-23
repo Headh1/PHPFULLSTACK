@@ -125,3 +125,15 @@ Route::get('/makesign' , function(){
 Route::get('/sign', function() {
     return "Sign!!";
 })->name('sign')->middleware('signed');
+
+use App\Http\Controllers\TestController;
+Route::get('/test', [TestController::class, 'index'])->name('tests.index');
+
+use App\Http\Controllers\TasksController;
+Route::resource('/tasks',TasksController::class);
+
+use App\Http\Controllers\BladeController;
+Route::get('/blade', [BladeController::class, 'index'])->name('blade.index');
+
+use App\Http\Controllers\ListController;
+Route::get('/list', [ListController::class, 'index'])->name('list.index');
