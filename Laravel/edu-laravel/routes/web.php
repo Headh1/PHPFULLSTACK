@@ -137,3 +137,6 @@ Route::get('/blade', [BladeController::class, 'index'])->name('blade.index');
 
 use App\Http\Controllers\ListController;
 Route::get('/list', [ListController::class, 'index'])->name('list.index');
+
+use App\Http\Controllers\BoardController;
+Route::resource('/board' , BoardController::class);

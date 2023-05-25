@@ -17,9 +17,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(CategorySeeder::class);
         // \App\Models\User::factory(10)->create();
-        $cnt =0;
-        while( $cnt <= 50){
-        \App\Models\Board::factory(1000)->create();
-        $cnt++;
-    }}
+        // $cnt =0;
+        // while( $cnt <= 50){
+        \App\Models\Board::factory(30)->create();
+        // $cnt++;
+    // }
+}
 }
