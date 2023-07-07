@@ -22,7 +22,7 @@
   </div>    -->
 
   <Navi :navList="navList" />
-  <Mo @close="modalFlg=false" :modalFlg="modalFlg"/>
+  <Mo @close="modalFlg=false" :modalFlg="modalFlg"  />
   <!-- <br>
   <br>
   <div class="bg_black" v-if="modalFlg">
@@ -77,15 +77,15 @@ export default {
   },
   methods: {
     up(i) {
-      this.products[i].count++;
       this.num=i;
+      this.products[i].count++;
     },
     down(i) {
+      this.num=i;
       this.products[i].count--;
       if (this.products[i].count <0){
         this.products[i].count = 0
       }
-      this.num=i;
     },
     open(i){
       this.modalFlg=true;

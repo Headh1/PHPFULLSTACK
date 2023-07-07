@@ -2,7 +2,7 @@
     <div class="bg_black" v-if="modalFlg">
         <div class="bg_white">
             <img>
-            <h4>1</h4>
+            <h4>{{ product }}</h4>
             <p>2</p>
             <p>3</p>
             <button>▲</button>
@@ -17,6 +17,7 @@ export default {
         name:'Mo',
         props: {
             modalFlg : Boolean,
+            product : Object,
         }
     }
 </script>

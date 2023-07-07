@@ -1,9 +1,7 @@
 <template>
     <div>
-        <a @click="$emit('open')">
-            <img :src="product.img" alt="">
-        </a>
-        <h4>{{ product.name }}</h4>
+        <img @click="$emit('open')" :src="product.img" alt="">
+        <h4 @click="$emit('open')">{{ product.name }}</h4>
         <p>{{ product.price }}</p>
         <p>{{ product.con }}</p>
     </div>
