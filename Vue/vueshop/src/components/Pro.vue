@@ -1,9 +1,10 @@
 <template>
     <div>
         <img @click="$emit('open')" :src="product.img" alt="">
-        <h4 @click="$emit('open')">{{ product.name }}</h4>
+        <h4 product.count="0" @click="$emit('open')">{{ product.name }}</h4>
         <p>{{ product.price }}</p>
         <p>{{ product.con }}</p>
+        <p>{{ product.count }}</p>
     </div>
 </template>
 

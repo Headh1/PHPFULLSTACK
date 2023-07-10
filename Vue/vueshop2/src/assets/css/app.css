@@ -1,0 +1,38 @@
+.nav {
+    background-color: 	#FFFAF0;
+    padding : 15px;
+}
+
+.nav a {
+    margin: 20px;
+    color: #A9A9A9;
+}
+
+.btn {
+    background-color: #ffffff;
+    border: 1px solid #f1d6a3;
+    border-radius: 10px;
+    margin : 7px;
+    padding: 6px;
+}
+
+.o {
+    width: 50%;
+    background-color: #F5F5F5;
+    padding: 10px;
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+.d {
+    width: 90%;
+    background-color: #fcfcfc;
+    padding:20px;
+    margin : 20px auto;
+}
+
+h4,img{
+    cursor: pointer;
+}
+

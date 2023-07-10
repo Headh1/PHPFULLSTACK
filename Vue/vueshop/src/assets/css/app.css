@@ -35,3 +35,42 @@
 h4,img{
     cursor: pointer;
 }
+
+/* .stTran{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.endTran{
+    opacity: 1;
+} */
+.dis {
+    background: #ffecd2;
+    border-radius: 20px;
+    height: 100px;
+    width: 95%;
+    line-height: 100px;
+    margin: 5px auto;
+}
+
+.moTran-enter-from{
+    opacity: 0;
+}
+
+.moTran-enter-active{
+    transition: all 1s;
+}
+
+.moTran-enter-enter-to{
+    opacity: 1;
+}
+
+.moTran-leave-from{
+    transform :translateY(1px);
+}
+.moTran-leave-active{
+    transition: all 1s;
+}
+.moTran-leave-to{
+    opacity: 0;
+}

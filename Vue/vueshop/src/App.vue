@@ -22,7 +22,19 @@
   </div>    -->
 
   <Navi :navList="navList" />
-  <Mo @close="modalFlg=false" :modalFlg="modalFlg"  />
+  <br>
+  <div class = "dis"> 
+    지금 구매 하시면 <span>{{ per }}%</span> 할인 
+  </div>
+  <br>
+  <!-- <div class="stTran" :class="{endTran : modalFlg}"> -->
+  <transition name="moTran">
+    <Mo @close="close()" 
+    :modalFlg="modalFlg" 
+    :num="num" 
+    :products ="products"  />
+  </transition>
+  <!-- </div> -->
   <!-- <br>
   <br>
   <div class="bg_black" v-if="modalFlg">
@@ -39,8 +51,14 @@
       <button @click="close"> 확인</button>
     </div>
   </div> -->
+  <!-- <br> -->
+  <!-- <input type="text" @input="inputT = $event.target.value;"> -->
+  <!-- <input type="text" v-model="inputT"> -->
+  <!-- <br> -->
+  <!-- <span>{{ inputT }}</span> -->
+  <!-- <br> -->
   <br>
-  <Pro :product ="product" v-for="(product,i) in products" :key="i" @open="modalFlg=true"/>
+  <Pro :product ="product" v-for="(product,i) in products" :key="i" @open="open(num); num=i;"/>
   <!-- <div v-for="(item,i) in products" :key="i" >
     <a @click="open(i)">
       <img :src="item.img" alt="">
@@ -65,14 +83,39 @@ export default {
   name: 'App',
   data() { 
     return {
+      per:90,
+      hookT : false,
+      inputT:"",
       navList:['Home','product','etc','service'],
       count:'10',
+      num:0,
       products: data,
       p:0,
       modalFlg:false,
       styleB:'color:#BC8F8F',
-      styleS:'color:salmon'
+      styleS:'color:salmon',
+    }
+  },
+  mounted() {
+    // if(this.per>0){
+    //     setInterval(() => this.per= this.per-10 ,1000);
+    //   }
 
+    setInterval(()=> {
+          if(this.per>0) {
+            this.per = this.per-10;
+          }
+          else {
+            this.per = 0;
+          }
+        },1000)
+  },
+  watch: {
+    inputT(inp) {
+      if( inp == 3 ) {
+        alert('안녕');
+        this.inputT= "";
+      }
     }
   },
   methods: {
