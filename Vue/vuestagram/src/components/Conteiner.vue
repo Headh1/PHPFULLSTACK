@@ -12,9 +12,9 @@
     </div>
 
     <div v-if="$store.state.tbflg == 2">
-        <div class="upload-img" :style="{'backgroundImage':`url(${$store.state.imgUrl})`}"></div>
+        <div class="upload-img" :class="$store.state.filter" :style="{'backgroundImage':`url(${$store.state.imgUrl})`}"></div>
         <div class="write-box">
-            <textarea name="content" id="content" placeholder="내용을 입력해 주세요"></textarea>
+            <textarea name="content" id="content" placeholder="내용을 입력해 주세요" ></textarea>
         </div>
     </div>
 

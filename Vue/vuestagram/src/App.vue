@@ -6,6 +6,7 @@
         <img class="logo" src="./assets/logo.png" alt="logo">
       </li>
       <li class="header-button header-button-right" v-if=" $store.state.tbflg == 1" @click="$store.commit('changeTbflg',2)">다음</li>
+      <li class="header-button header-button-right" v-if=" $store.state.tbflg == 2" @click="$store.dispatch('writeContent')">작성</li>
     </ul>
   </div>
 
@@ -38,6 +39,7 @@ export default {
       let imgUrl = URL.createObjectURL(file[0]);
       this.$store.commit('changeImgurl',imgUrl);
       this.$store.commit('changeTbflg',1);
+      this.$store.commit('updateImg',file[0]);
       e.target.value = '';
     }
   },
