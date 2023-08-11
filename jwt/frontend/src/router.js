@@ -5,6 +5,7 @@ import Home from './components/HomeComponent.vue'
 import TokenController from './js/TokenController';
 
 const configFlg = {
+    home:false,
     main: true, 
     login: false
 }
@@ -13,11 +14,19 @@ const beforeAuth = path => (from, to, next) => {
     const isToken = TokenController.getToken();
     const flg = configFlg[path];
 
-    if((flg && isToken) || (!flg )) {
+    if(isToken) {
+        if(path == 'login') {
+                next('/main');
+        }
+        
         return next();
-    }
+    } 
     else {
-        next('/login');
+        if(flg) {
+            next('/login');
+        }
+        
+        return next();
     }
 };
 
